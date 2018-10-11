@@ -1,0 +1,18 @@
+
+
+h1 {
+    display: inline-block;
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+.right {
+    float: right;
+}
