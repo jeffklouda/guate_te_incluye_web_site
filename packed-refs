@@ -1,0 +1,7 @@
+# pack-refs with: peeled fully-peeled sorted 
+d3b27802482c24d379506dd855a694ca00c4b1ce refs/remotes/origin/Carlos
+59cbc0e77c0b52c4755ae444d865241973affa6c refs/remotes/origin/James
+c6b5feb8223b5be313c6794bf974b1cc9cda4bc5 refs/remotes/origin/Reno
+60a5bd21617f3ce2ae7a925769a23d24a999949a refs/remotes/origin/jeff_dev
+60a5bd21617f3ce2ae7a925769a23d24a999949a refs/remotes/origin/master
+435dce67608f3ea949ec675e4ecbcce56d57d035 refs/remotes/origin/stephen-branch
