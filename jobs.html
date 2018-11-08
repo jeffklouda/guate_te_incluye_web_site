@@ -4,23 +4,10 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 
-	<title>Guate te Incluye</title>
+    <title>Guate te Incluye</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="global.css" rel="stylesheet">
-
-<style>
-aside {
-    float: left;
-}
-
-.joblist li {
-    list-style-type: none;
-}
-.joblist li a {
-    color: inherit;
-    text-decoration: none;
-}
-</style>
 </head>
 
 <body>
@@ -36,77 +23,95 @@ aside {
                 <li><a href="#">Donate</a></li>
             </ul>
         </nav>
-	</header>
+    </header>
+    <div class="container">
+        <div class="row">
+            <aside class="col-3">
+                <h3>Filters</h3>
 
-    <h2>Job search</h2>
+                <form>
+                    <fieldset class="form-group">
+                        <legend>Industry</legend>
 
-    <aside>
-        <h3>Filters</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="industry1">
+                            <label class="form-check-label" for="industry1">
+                                Industry 1
+                            </label>
+                        </div>
 
-        <form>
-            <fieldset>
-                <legend>Industry</legend>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="industry2">
+                            <label class="form-check-label" for="industry2">
+                                Industry 2
+                            </label>
+                        </div>
 
-                <label>
-                    <input type="checkbox">
-                    Industry 1
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="industry3">
+                            <label class="form-check-label" for="industry3">
+                                Industry 3
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <legend>Skills</legend>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="skill1">
+                            <label class="form-check-label" for="skill1">
+                                Skill 1
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="skill2">
+                            <label class="form-check-label" for="skill2">
+                                Skill 2
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="skill3">
+                            <label class="form-check-label" for="skill3">
+                                Skill 3
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <button type="reset" class="btn btn-secondary">Reset filters</button>
+                </form>
+            </aside>
+
+            <div class="col">
+                <h2>Job search</h2>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Search jobs" aria-label="Search jobs" aria-describedby="button-search">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" id="button-search">Search</button>
+                    </div>
+                </div>
+                <!-- <label>
+                    <p>Search for jobs</p>
+                    <input type="search">
                 </label>
-                <br>
-                <label>
-                    <input type="checkbox">
-                    Industry 2
-                </label>
-				<br>
-                <label>
-                    <input type="checkbox">
-                    Industry 3
-                </label>
-            </fieldset>
-			<fieldset>
-                <legend>Skills</legend>
+                <button>Search</button> -->
 
-                <label>
-                    <input type="checkbox">
-                    Skill 1
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox">
-                    Skill 2
-                </label>
-				<br>
-                <label>
-                    <input type="checkbox">
-                    Skill 3
-                </label>
-            </fieldset>
-
-            <button type="reset">Reset filters</button>
-        </form>
-    </aside>
-
-    <div>
-        <label>
-            <p>Search for jobs</p>
-            <input type="search">
-        </label>
-        <button>Search</button>
-
-        <ul class="joblist">
-            <li>
-                <a href="job_posting.html">
-                    <h3>Job title &ndash; Company &ndash; Location</h3>
-                    <p>Job description</p>
-                </a>
-            </li>
-
-            <li>
-                    <a href="job_posting.html">
-                        <h3>Job title &ndash; Company &ndash; Location</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h3><a href="job_posting.html">Job title &ndash; Company &ndash; Location</a></h3>
                         <p>Job description</p>
-                    </a>
-                </li>
-        </ul>
+                    </li>
+
+                    <li class="list-group-item">
+                        <h3><a href="job_posting.html">Job title &ndash; Company &ndash; Location</a></h3>
+                        <p>Job description</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 </html>
